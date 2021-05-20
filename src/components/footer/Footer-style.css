@@ -1,0 +1,131 @@
+.footer-wrapper{
+    background: #020712;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 52px 100px 100px 100px;
+}
+
+.footer__main-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 35px;
+    align-items: flex-start;
+    max-width: 1200px;
+
+}
+
+.footer__about-us{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer__contacts{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer__mail-info-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.footer__mail-info-logos{
+    margin-right: 25px;
+}
+
+.footer__social{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 11px;
+}
+
+.footer__social-links-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer__main-info-header{
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFF;
+    border-bottom: #ED2840 3px solid;
+    padding-bottom: 4px;
+    margin-top: 0px;
+}
+
+.footer__main-info-link{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    opacity: 0.8;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer__social{
+    margin-left: 50px;
+}
+
+
+@media only screen  and (max-width : 1350px) {
+    .footer-wrapper{
+        padding: 52px 10px 100px 10px;
+    }
+    .footer__main-info {
+        grid-column-gap: 10px;
+    }
+}
+
+@media only screen  and (max-width : 1100px) {
+    .footer-wrapper{
+        padding: 52px 30px 100px 100px;
+    }
+    .footer__main-info {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+    }
+
+    .footer__logo-wrapper{
+        display: flex;
+        align-items: flex-start;
+    }
+    .footer__social{
+        margin-left: 0;
+    }
+}
+
+@media only screen  and (max-width : 680px) {
+    .footer-wrapper{
+        padding: 52px 50px 100px 50px;
+    }
+    .footer__main-info {
+        grid-template-columns: 1fr;
+        grid-column-gap: 80px;
+    }
+
+    .footer__logo-wrapper{
+        border-bottom: #FFFFFF1A 2px solid;
+        padding-bottom: 20px;
+    }
+}
