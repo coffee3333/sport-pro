@@ -1,0 +1,41 @@
+.info-module__main-box{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 180px 100px 200px 100px;
+}
+
+
+.info-module__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1240px;
+}
+
+
+.info-module__header{
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 68px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ED2840;
+    text-transform: uppercase;
+}
+
+.info-module__header-wrapper{
+    margin-right: 120px;
+}
+
+.info-module__desc-wrapper{
+    max-width: 644px;
+}
+
+.info-module__desc{
+    text-align: left;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+}

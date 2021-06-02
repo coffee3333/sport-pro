@@ -1,0 +1,72 @@
+.carousel__wrapper{
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.slide-item__wrapper{
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px 100px;
+}
+
+.slide-item__info-box{
+    max-width: 45%;
+    text-align: left;
+}
+
+
+.slide-item__time-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.slide-item__time-dot{
+    margin-right: 12px;
+}
+
+.slide-item__time{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    color: #FFF;
+    margin: 0;
+}
+
+.slide-item__header{
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 85px;
+    margin-bottom: 40px;
+}
+
+.slide-item__button:active, /* активная/посещенная ссылка */
+.slide-item__button{
+    padding: 16px 14px 16px 14px;
+    background: #ED2840;
+    text-decoration: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.slick-arrow::before{
+    content: none;
+}
+.slick-next{
+    transform: translateX(-70px);
+}
+
+.slick-prev{
+    transform: translateX(70px);
+    z-index: 999;
+}
+
+
+
