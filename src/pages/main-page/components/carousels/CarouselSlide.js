@@ -4,7 +4,7 @@ import "./CarouselSlide.css"
 import dot from './img/dot.svg'
 
 
-export default function CarouselSlide({slide, index}) {
+export default function CarouselSlide({slide}) {
 
     return(
         <div className="slide-item__wrapper" style = {{backgroundImage: `url(${slide.img})`}}>
@@ -22,5 +22,4 @@ export default function CarouselSlide({slide, index}) {
 
 CarouselSlide.propTypes = {
     slide: PropTypes.object.isRequired,
-    index: PropTypes.number
 }

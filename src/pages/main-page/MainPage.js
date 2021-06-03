@@ -1,9 +1,10 @@
 import React from "react";
 
-import Carousels from "./carousels/Carousels"
-import NewsModule from "./news-module/NewsModule";
-import InfoModule from "./info-module/infoModule";
+import Carousels from "./components/carousels/Carousels"
+import NewsModule from "./components/news-module/NewsModule";
+import InfoModule from "./components/info-module/infoModule";
 import MainLayout from "../../components/main-layout/MainLayout";
+import FederationsList from "./components/federations-module/FederationsList"
 
 export default function MainPage(){
     return(
@@ -12,6 +13,7 @@ export default function MainPage(){
                     <Carousels/>
                     <NewsModule/>
                     <InfoModule/>
+                    <FederationsList/>
                 </div>
             </MainLayout>
     );

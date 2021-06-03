@@ -1,0 +1,20 @@
+.federations-list__main-box{
+    margin: 0 auto;
+    max-width: 1440px;
+    text-align: left;
+    color: #020712;
+}
+
+.federations-list__wrapper{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.federations-list__header{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 44px;
+    text-align: left;
+    margin-bottom: 16px;
+}

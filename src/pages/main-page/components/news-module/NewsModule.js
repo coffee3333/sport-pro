@@ -6,18 +6,21 @@ import "./newsModule.css"
 export default function NewsModule() {
     const data = [
         {
+            id: 1,
             title: 'Бокс',
             desc: 'Контактный вид спорта, единоборство...',
             link: './',
             img: require("./img/1.png").default
         },
         {
+            id: 2,
             title: 'Дзюдо',
             desc: 'Японское боевое искусство без оружия',
             link: './',
             img: require("./img/2.png").default
         },
         {
+            id: 3,
             title: 'Ушу',
             desc: 'Комплекс традиционных китайских искуств',
             link: './',
@@ -29,8 +32,8 @@ export default function NewsModule() {
     return (
         <div className="news-module__main-box">
             <div className="news-module__wrapper">
-                {data.map((item, index) =>{
-                    return <NewsItem  item = {item} key = {data.id} index = {index}/>
+                {data.map((item) =>{
+                    return <NewsItem  item = {item} key = {item.id}/>
                 })}
             </div>
         </div>

@@ -13,13 +13,10 @@ export default function App() {
       <div className="App">
           <Router>
               <Switch>
-                  {/*<Route path="/about"/>*/}
-                  {/*<Route path="/users"/>*/}
                   <Route path="/about-us" component = {AboutUs}/>
-
                   <Route path="/" exact component={MainPage}/>
               </Switch>
-          </Router>d
+          </Router>
       </div>
   );
 }

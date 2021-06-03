@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header-style.css"
+import {Link} from "react-router-dom";
 
 export default function Header(){
     const data = {
@@ -10,7 +11,9 @@ export default function Header(){
     return(
         <div className="header__wrapper">
             <div className="header-logo__wrapper">
-                <img src={data.logo} alt="" className="header-logo"/>
+                <Link to = "/">
+                    <img src={data.logo} alt="" className="header-logo"/>
+                </Link>
             </div>
             <div className="header-nav-links__wrapper">
                 <div className="header-nav-links__localisation-wrapper">
@@ -18,7 +21,7 @@ export default function Header(){
                 <div className="header-nav-links__links-wrapper">
                     <a href="#" className="header-nav-links__link">Федерации</a>
                     <a href="#" className="header-nav-links__link">Соревнования</a>
-                    <a href="#" className="header-nav-links__link">О нас</a>
+                    <Link className="header-nav-links__link" to="/about-us">О нас</Link>
                     <a href="#" className="header-nav-links__link">Контакты</a>
                 </div>
             </div>

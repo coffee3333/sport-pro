@@ -1,0 +1,19 @@
+.federations-types__wrapper{
+    margin-bottom: 100px;
+}
+
+.federations-types__list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-row-gap: 18px;
+    grid-column-gap: 19px;
+}
+
+.federations-types__header{
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 68px;
+    color: #ED2840;
+    margin-bottom: 60px;
+}

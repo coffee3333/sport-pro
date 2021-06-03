@@ -13,19 +13,22 @@ import arrow from './img/arrow.svg'
 export default function Carousels() {
     const data = [
         {
-            title: 'Мы едины! Мы за спорт!',
+            id: 1,
+            title: 'Мы едины! Мы за спорт! 1',
             time: '12.05.2021 - 18.05.2021',
             link: 'link',
             img: require("./img/rect.png").default
         },
         {
-            title: 'Мы едины! Мы за спорт!',
+            id: 2,
+            title: 'Мы едины! Мы за спорт! 2',
             time: '12.05.2021 - 18.05.2021',
             link: 'link',
             img: require("./img/rect2.jpeg").default
         },
         {
-            title: 'Мы едины! Мы за спорт!',
+            id: 3,
+            title: 'Мы едины! Мы за спорт! 3',
             time: '12.05.2021 - 18.05.2021',
             link: 'link',
             img: require("./img/rect3.jpeg").default
@@ -73,7 +76,7 @@ export default function Carousels() {
             <div className="carousel__wrapper">
                 <Slider {...settings}>
                     {data.map((slide, index) =>{
-                        return <CarouselSlide  slide = {slide} key = {data.id} index = {index}/>
+                        return <CarouselSlide  slide = {slide} key = {slide.id}/>
                     })}
                 </Slider>
             </div>

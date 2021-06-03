@@ -1,0 +1,43 @@
+.about-us__hero-wrapper{
+    background-size: cover;
+    background-repeat: no-repeat no-repeat;
+    margin: 0 auto;
+    height: 822px;
+    margin-bottom: 52px;
+}
+
+.about-us__wrapper{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.about-us__header-wrapper{
+    padding: 55px 57px;
+    background: #FFF;
+    max-width: 1240px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-us__header{
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 51px;
+    color: #ED2840;
+}
+
+.about-us__desc-wrapper{
+    margin-bottom: 52px;
+    width: 60%;
+}
+
+
+.about-us__desc{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: left;
+    margin-left: 100px;
+}
