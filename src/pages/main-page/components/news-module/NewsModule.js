@@ -8,7 +8,7 @@ export default function NewsModule() {
         {
             id: 1,
             title: 'Бокс',
-            desc: 'Контактный вид спорта, единоборство...',
+            desc: 'Японское боевое искусство без оружия',
             link: './',
             img: require("./img/1.png").default
         },

@@ -19,18 +19,27 @@
     width: 100%;
 }
 
-.header-nav-links__localisation-wrapper{
+.header-nav-links__empty{
     padding-bottom: 40px;
     border-bottom: 1px solid #FFFFFF47;
 }
 
 .header-nav-links__links-wrapper{
     display: flex;
-    padding-left: 50px;
+    padding-left: 55px;
+    justify-content: normal;
+    align-items: center;
 }
 
+
+.header-nav-links__links-side{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav-links__link:active,
+.header-nav-links__link:hover,
 .header-nav-links__link{
-    font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -39,5 +48,14 @@
     color: #FFF;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 20px;
+    padding: 20px 30px;
+}
+
+
+.header-nav-links__icon-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 125px;
+    gap: 30px;
 }

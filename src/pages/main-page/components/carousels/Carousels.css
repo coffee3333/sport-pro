@@ -43,7 +43,7 @@
     margin-bottom: 40px;
 }
 
-.slide-item__button:active, /* активная/посещенная ссылка */
+.slide-item__button:active,
 .slide-item__button{
     padding: 16px 14px 16px 14px;
     background: #ED2840;
