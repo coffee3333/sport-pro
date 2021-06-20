@@ -106,7 +106,7 @@ export default function FederationsList(){
 
 
     return (
-        <div className="federations-list__main-box">
+        <div className="federations-list__main-box" id = "federations">
             <div className="federations-list__wrapper">
                 <h3 className="federations-list__header">Виды спорта</h3>
                 {data.map((types) =>{

@@ -1,8 +1,7 @@
 import React from "react";
-import Header from "../header/Header";
 import Footer from "../footer/Footer";
 import UpButton from "../up-button/UpButton";
-
+import Header from "../header/header";
 
 
 export default function MainLayout({children}){
@@ -13,10 +12,9 @@ export default function MainLayout({children}){
         <div>
             <Header/>
             <div className="main-layout__wrapper">
-                {children}
+              {children}
             </div>
             <UpButton/>
-
             <Footer/>
         </div>
     );

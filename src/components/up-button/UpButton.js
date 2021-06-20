@@ -1,4 +1,7 @@
 import React, {useState} from 'react';
+import {FaArrowCircleUp} from 'react-icons/fa';
+import "./UpButton.css"
+
 
 export default function UpButton(){
 
@@ -20,18 +23,7 @@ export default function UpButton(){
 
     return (
         <div className="up-button__wrapper">
-            <button onClick={scrollTop}>Top</button>
+            <FaArrowCircleUp className="scrollTop" onClick={scrollTop} style={{display: showScroll ? 'flex' : 'none'}}/>
         </div>
     );
 }
-
-
-//
-// const ScrollArrow = () =>{
-//
-//
-//
-//     return (
-//         <FaArrowCircleUp className="scrollTop"  style={{height: 40, display: showScroll ? 'flex' : 'none'}}/>
-//     );
-// }
