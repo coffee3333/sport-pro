@@ -1,0 +1,24 @@
+.federation-about-sport__header{
+    font-family: Oswald;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #ED2840;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+
+.federation-about-sport__desc{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 170%;
+    text-align: left;
+    max-width: 800px;
+    margin-bottom: 100px;
+}

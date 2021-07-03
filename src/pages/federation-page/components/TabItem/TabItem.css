@@ -1,0 +1,24 @@
+.federation-tab-links__tab-link{
+    font-family: Oswald;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    border: 1px solid #ED2840;
+    padding: 13px 0;
+    width: 170px;
+    background: transparent;
+}
+
+
+.federation-tab-links__tab-link:active{
+    color: #FFFFFF;
+    background: #ED2840;
+}
+
+.federation-tab-links__tab-link:hover {
+    color: #FFFFFF;
+    background: #ED2840;
+}
+

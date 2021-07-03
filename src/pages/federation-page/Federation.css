@@ -19,3 +19,32 @@
     margin: 0 auto;
     text-align: left;
 }
+
+.federation__header{
+    font-family: Oswald;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #ED2840;
+}
+
+
+.federation-tab-links__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 13px;
+    margin: 0 auto;
+    max-width: 1240px;
+    margin-bottom: 30px;
+
+}
+
+
+.federation__component-wrapper{
+    max-width: 1240px;
+    margin: 0 auto;
+}
