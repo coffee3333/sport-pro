@@ -1,0 +1,79 @@
+.contacts__main-box{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.contacts-page__wrapper{
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column;
+    margin-top: 55px;
+}
+
+.contacts__header{
+    font-family: Oswald;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ED2840;
+    text-transform: uppercase;
+}
+
+.contacts__drop-downs-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+
+
+.contacts__drop-down-select{
+    width: 500px;
+    height: 50px;
+    /*padding: 14px 22px 14px 16px;*/
+}
+
+.contacts__drop-downs-header{
+    font-family: Oswald;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.contacts-page__contact-info-wrapper{
+    margin-bottom: 100px;
+}
+
+.contacts-page__contact-title{
+    font-family: Oswald;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ED2840;
+    margin-bottom: 34px;
+    text-transform: uppercase;
+}
+
+.contacts-page__contact-address{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+

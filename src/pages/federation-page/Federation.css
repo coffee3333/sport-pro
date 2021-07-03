@@ -1,0 +1,21 @@
+.federation__hero-wrapper{
+    background-size: cover;
+    background-repeat: no-repeat no-repeat;
+    margin: 0 auto;
+    height: 822px;
+    margin-bottom: 52px;
+}
+
+.federation__wrapper{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+
+.federation__header-wrapper{
+    padding: 55px 57px;
+    background: #FFF;
+    max-width: 1240px;
+    margin: 0 auto;
+    text-align: left;
+}

@@ -23,7 +23,7 @@ export default function HeaderWhite(){
                 </div>
                 <div className="header-white-nav-links__links-wrapper">
                     <div className="header-white-nav-links__links-side">
-                        <NavHashLink to ="/#federations" className="header-white-nav-links__link">Федерации</NavHashLink>
+                        <NavHashLink to ="/#federations" className="header-white-nav-links__link" activeClassName="active">Федерации</NavHashLink>
                         <a href="#" className="header-white-nav-links__link">Рейтинг  КР</a>
                         <a href="#" className="header-white-nav-links__link">Соревнования</a>
                         <a href="#" className="header-white-nav-links__link">Новости</a>

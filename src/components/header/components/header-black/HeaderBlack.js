@@ -9,9 +9,6 @@ export default function HeaderBlack(){
         insta: require("../../../footer/img/Insta.svg").default
     }
 
-    console.log("black")
-
-
     return(
         <div className="header__wrapper">
             <div className="header-logo__wrapper">
