@@ -12,7 +12,7 @@ export default function HeaderBlack(){
     return(
         <div className="header__wrapper">
             <div className="header-logo__wrapper">
-                <NavLink to = "/">
+                <NavLink className="header-logo__main-page-link" to = "/">
                     <img src={data.logo} alt="" className="header-logo"/>
                 </NavLink>
             </div>

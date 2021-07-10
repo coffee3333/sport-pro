@@ -1,0 +1,18 @@
+.federation-competition-program__header{
+    font-family: Oswald;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #ED2840;
+    margin-bottom: 50px;
+}
+
+.federation-competition-program__items-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}

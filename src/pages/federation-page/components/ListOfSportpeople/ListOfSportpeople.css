@@ -1,0 +1,91 @@
+.federation-list-of-sport-people__wrapper{
+    margin-bottom: 100px;
+}
+
+
+.federation-list-of-sport-people__list-box{
+    margin:0 auto;
+    max-width: 1240px;
+}
+
+.federation-list-of-sport-people__list-headers{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 50% 25% 10%;
+    text-align: left;
+}
+
+.federation-list-of-sport-people__main-header{
+    font-family: Oswald;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ED2840;
+    margin-bottom: 47px;
+}
+
+.federation-list-of-sport-people__header{
+    font-family: Oswald;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ED2840;
+}
+
+.federation-list-of-sport-people__list-items{
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    height: 771px;
+    overflow: scroll;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+
+.federation-list-of-sport-people__list-item:hover{
+    background: rgba(237, 40, 64, 0.1);
+    border-left: 4px solid #ED2840;
+}
+
+.federation-list-of-sport-people__list-item{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 50% 25% 10%;
+    text-align: left;
+    height: 76px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    align-items: center;
+    border-left: 4px solid transparent;
+}
+
+.federation-list-of-sport-people__item-name-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 36px;
+}
+
+.federation-list-of-sport-people__item-name{
+    margin: 0;
+}
+
+.federation-list-of-sport-people__item-number{
+    margin: 0 0 0 53px;
+}
+
+.federation-list-of-sport-people__item-country{
+    margin: 0;
+}
+
+.federation-list-of-sport-people__item-points{
+    margin: 0;
+}

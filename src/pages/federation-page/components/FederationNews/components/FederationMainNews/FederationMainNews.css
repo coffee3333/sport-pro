@@ -1,0 +1,75 @@
+.federation-main-news__wrapper{
+    margin-bottom: 77px;
+}
+
+.federation-main-news__wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 47px;
+}
+
+.federation-main-news__news-date-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    justify-content: flex-start;
+    padding-top: 14px;
+}
+
+.federation-main-news__news-date{
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: #898989;
+}
+
+.federation-main-news__news-sport{
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ED2840;
+}
+
+.federation-main-news__news-desc-wrapper{
+    text-align: left;
+}
+
+.federation-main-news__news-header{
+    font-family: Oswald;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0.01em;
+    max-width: 441px;
+}
+
+.federation-main-news__news-desc{
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+    max-width: 493px;
+}
+
+.federation-main-news__news-link,
+.federation-main-news__news-link:hover {
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    color: #ED2840;
+    text-transform: uppercase;
+    text-decoration: none;
+}

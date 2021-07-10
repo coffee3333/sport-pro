@@ -2,7 +2,7 @@ import React from "react";
 import "./TabItem.css"
 
 
-export default function TabItem(props){
+export default function TabItem({item, isActive, setTab}) {
   const name_of_components = {
     aboutSport: "Об этом спорте",
     federationInKg: "Федерация КР",
@@ -12,8 +12,12 @@ export default function TabItem(props){
     gallery: "Галерея"
   }
 
-
   return (
-    <button className="federation-tab-links__tab-link" onClick={props.setTab}>{name_of_components[props.item]}</button>
+    <button
+      className={`federation-tab-links__tab-link ${isActive && "federation-tab-links__tab-link--active"}`}
+      onClick={setTab}
+    >
+      {name_of_components[item]}
+    </button>
   );
 }

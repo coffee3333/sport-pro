@@ -17,8 +17,8 @@
     background: #ED2840;
 }
 
+.federation-tab-links__tab-link--active,
 .federation-tab-links__tab-link:hover {
     color: #FFFFFF;
     background: #ED2840;
 }
-

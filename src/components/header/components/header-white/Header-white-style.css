@@ -44,9 +44,9 @@
     border-bottom: 4px solid #ED2840;
 }
 
-
-
 .header-white-nav-links__link{
+    font-family: Oswald;
+    letter-spacing: 0em;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -57,7 +57,21 @@
     text-decoration: none;
     padding: 20px 30px;
     border-bottom: 4px solid transparent;
+}
 
+.header-white-nav-links__link-active{
+    font-family: Oswald;
+    letter-spacing: 0em;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    text-align: center;
+    color: #ED2840;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px 30px;
+    border-bottom: 4px solid #ED2840;
 }
 
 

@@ -13,6 +13,10 @@
     padding: 14px 100px;
 }
 
+.header-logo{
+    text-decoration: none;
+}
+
 .header-nav-links__wrapper{
     display: flex;
     flex-flow: column;
@@ -54,7 +58,8 @@
     text-decoration: none;
     padding: 20px 30px;
     border-bottom: 4px solid transparent;
-
+    font-family: Oswald;
+    letter-spacing: 0em;
 }
 
 

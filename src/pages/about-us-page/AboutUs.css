@@ -25,6 +25,10 @@
     font-weight: 900;
     line-height: 51px;
     color: #ED2840;
+    font-family: Oswald;
+    letter-spacing: 0.01em;
+    text-align: left;
+
 }
 
 .about-us__desc-wrapper{

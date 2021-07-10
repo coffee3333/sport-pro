@@ -4,14 +4,14 @@ import "./Federation.css"
 import AboutUsFederation from "./components/AboutUs/AboutUsFederation";
 import TabItem from "./components/TabItem/TabItem";
 import FederationInKg from "./components/FederationInKg/FederationInKg";
-import CompetitionProgram from "./components/CompetitionProgram";
-import ListOfSportPeople from "./components/ListOfSportpeople";
-import FederationNews from "./components/FederationNews";
+import CompetitionProgram from "./components/CompetitionProgram/CompetitionProgram";
+import ListOfSportPeople from "./components/ListOfSportpeople/ListOfSportpeople";
+import FederationNews from "./components/FederationNews/FederationNews";
 import FederationGallery from "./components/FederationGallery";
 
 
+export default function Federation(props) {
 
-export default function Federation(props){
   const data = {
     id: 3,
     title: "Курош",
@@ -27,25 +27,25 @@ export default function Federation(props){
     gallery: <FederationGallery/>
   }
 
-  const [selectedTab, selectTab] = useState([Object.keys(tab_components)[0]]);
+  const [selectedTab, selectTab] = useState(Object.keys(tab_components)[0]);
 
 
-  return(
+  return (
     <MainLayout>
       {/*{props.match.params.id}*/}
       <div className="federation__wrapper">
-        <div className="federation__hero-wrapper"  style = {{backgroundImage: `url(${data.bgImg})`}} >
+        <div className="federation__hero-wrapper" style={{backgroundImage: `url(${data.bgImg})`}}>
           <div className="federation__header-wrapper">
             <h2 className="federation__header">{data.title}</h2>
           </div>
         </div>
         <div className="federation-tab-links__wrapper">
-            {Object.keys(tab_components)
-              .map((item) =>{
-                return <TabItem item = {item} setTab={() => selectTab(item)}/>
-              } )}
+          {Object.keys(tab_components)
+            .map((item) => {
+              return <TabItem isActive={selectedTab === item} item={item} setTab={() => selectTab(item)}/>
+            })}
         </div>
-        <div className="federation__component-wrapper" >
+        <div className="federation__component-wrapper">
           {tab_components[selectedTab]}
         </div>
       </div>
