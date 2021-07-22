@@ -26,7 +26,9 @@ export default function FederationMainNews(){
           <h3 className="federation-main-news__news-header">{data.header}</h3>
           <p className="federation-main-news__news-desc">{data.desc}</p>
         </div>
-        <a href="#" className="federation-main-news__news-link">Подробнее</a>
+        <div className="federation-main-news__news-link-wrapper">
+          <a href="#" className="federation-main-news__news-link">Подробнее</a>
+        </div>
       </div>
     </div>
   )

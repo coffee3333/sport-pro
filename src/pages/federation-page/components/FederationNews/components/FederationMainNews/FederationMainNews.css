@@ -4,7 +4,7 @@
 
 .federation-main-news__wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 47px;
 }
 
@@ -24,6 +24,12 @@
     line-height: 19px;
     letter-spacing: 0em;
     color: #898989;
+}
+
+.federation-main-news__news-info-wrapper{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 }
 
 .federation-main-news__news-sport{
@@ -61,6 +67,11 @@
     max-width: 493px;
 }
 
+.federation-main-news__news-link-wrapper{
+    display: flex;
+    align-items: flex-start;
+}
+
 .federation-main-news__news-link,
 .federation-main-news__news-link:hover {
     font-family: Lato;
@@ -72,4 +83,6 @@
     color: #ED2840;
     text-transform: uppercase;
     text-decoration: none;
+    text-align: left;
+    margin: 0;
 }
