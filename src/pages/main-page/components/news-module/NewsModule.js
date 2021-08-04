@@ -1,82 +1,13 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import NewsItem from "./NewsItem";
 import "./newsModule.css"
 
 import Slider from "react-slick";
 import arrow from "../carousels/img/arrow.svg";
+import axios from "axios";
 
 
 export default function NewsModule() {
-    const data = [
-        {
-            id: 1,
-            title: 'Бокс',
-            desc: 'Японское боевое искусство без оружия',
-            link: './',
-            img: require("./img/1.png").default
-        },
-        {
-            id: 2,
-            title: 'Дзюдо',
-            desc: 'Японское боевое искусство без оружия',
-            link: './',
-            img: require("./img/2.png").default
-        },
-        {
-            id: 3,
-            title: 'Ушу',
-            desc: 'Комплекс традиционных китайских искуств',
-            link: './',
-            img: require("./img/3.png").default
-        },
-        {
-            id: 1,
-            title: 'Бокс',
-            desc: 'Японское боевое искусство без оружия',
-            link: './',
-            img: require("./img/1.png").default
-        },
-        {
-            id: 2,
-            title: 'Дзюдо',
-            desc: 'Японское боевое искусство без оружия',
-            link: './',
-            img: require("./img/2.png").default
-        },
-        {
-            id: 3,
-            title: 'Ушу',
-            desc: 'Комплекс традиционных китайских искуств',
-            link: './',
-            img: require("./img/3.png").default
-        },
-        {
-            id: 1,
-            title: 'Бокс',
-            desc: 'Японское боевое искусство без оружия',
-            link: './',
-            img: require("./img/1.png").default
-        },
-        {
-            id: 2,
-            title: 'Дзюдо',
-            desc: 'Японское боевое искусство без оружия',
-            link: './',
-            img: require("./img/2.png").default
-        },
-        {
-            id: 3,
-            title: 'Ушу',
-            desc: 'Комплекс традиционных китайских искуств',
-            link: './',
-            img: require("./img/3.png").default
-        }
-
-    ];
-
-
-
-
     function SampleNextArrow(props) {
         const { className, style, onClick } = props;
         return (
@@ -146,11 +77,21 @@ export default function NewsModule() {
     };
 
 
+
+    const [news, setNews] = useState([]);
+
+    useEffect(() => {
+
+        axios.get('https://sportproteam2.herokuapp.com/api/news/')
+          .then(res =>setNews(res.data.results))
+    }, [])
+
+
     return (
         <div className="news-module__main-box">
             <div className="news-module__wrapper">
                 <Slider {...settings}>
-                    {data.map((item, index) =>{
+                    {news.map((item, index) =>{
                         return <NewsItem  item = {item} key = {item.id}/>
                     })}
                 </Slider>

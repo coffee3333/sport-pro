@@ -18,6 +18,13 @@
     margin-right: 26px;
 }
 
+.news-module-item__img{
+    width: 162px;
+    height: 163px;
+    object-fit: cover;
+
+}
+
 .news-module-item__content-side{
     background: #ED2840;
     text-align: left;
@@ -39,9 +46,16 @@
     font-style: normal;
     font-weight: 600;
     line-height: 20px;
+    max-height: 72px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
 }
 
 .news-module-item__content-link:active,
+.news-module-item__content-link:hover,
 .news-module-item__content-link{
     font-size: 14px;
     font-style: normal;
