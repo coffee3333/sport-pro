@@ -1,0 +1,72 @@
+.federation-gallery__wrapper{
+    background: #020712;
+    padding-top: 67px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+}
+
+.federation-gallery__box{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.federation-gallery__header{
+    font-family: Oswald;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #ED2840;
+    margin-bottom: 50px;
+}
+
+.federation-gallery__main-image{
+    text-align: left;
+    max-width: 1128px;
+    margin: 0 auto 100px auto;
+}
+
+.federation-gallery__image-desc-wrapper{
+    margin-bottom: 86px;
+    text-align: left;
+}
+
+
+.federation-gallery__image-category{
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    color: #ED2840;
+}
+
+.federation-gallery__image-tag{
+    font-family: Oswald;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+
+.federation-gallery__image-date{
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.federation-gallery__image-wrapper{
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+.federation-gallery__image-box{
+    margin-bottom: 15px;
+}

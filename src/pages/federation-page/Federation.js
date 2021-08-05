@@ -9,7 +9,7 @@ import FederationInKg from "./components/FederationInKg/FederationInKg";
 import CompetitionProgram from "./components/CompetitionProgram/CompetitionProgram";
 import ListOfSportPeople from "./components/ListOfSportpeople/ListOfSportpeople";
 import FederationNews from "./components/FederationNews/FederationNews";
-import FederationGallery from "./components/FederationGallery";
+import FederationGallery from "./components/FederationGallery/FederationGallery";
 import loadLogo from "../../assets/img/load.gif"
 
 
@@ -21,30 +21,33 @@ export default function Federation(props) {
   useEffect( () => {
     setLoading(true)
 
-    axios.get(`https://sportproteam2.herokuapp.com/api/federation/${props.match.params.id}`)
+    axios.get(`http://sportproteam2.herokuapp.com/api/gallery/${props.match.params.id}`)
       .then(res => setFederationData(res.data))
       .finally(() => setLoading(false))
   }, [])
 
   const tab_components = {
-    aboutSport: <AboutUsFederation data = {federationData?.sport?.description}/>,
-    federationInKg: <FederationInKg data = {federationData}/>,
+    aboutSport: <AboutUsFederation data = {federationData?.federation?.sport?.description}/>,
+    federationInKg: <FederationInKg data = {federationData?.federation}/>,
     competitionProgram: <CompetitionProgram/>,
     listOfSportPeople: <ListOfSportPeople/>,
     news: <FederationNews/>,
-    gallery: <FederationGallery/>
+    gallery: <FederationGallery data = {federationData?.photo}/>
   }
 
   const [selectedTab, selectTab] = useState(Object.keys(tab_components)[0]);
+
+
+
 
 
   if (loading) return <MainLayout> <div className = "main-loading-wrapper"><img src = {loadLogo} alt = "loading" className = "main-load-gif"/></div></MainLayout>
   return (
     <MainLayout>
       <div className="federation__wrapper">
-        <div className="federation__hero-wrapper" style={{backgroundImage: `url(${federationData?.sport?.photo}`}}>
+        <div className="federation__hero-wrapper" style={{backgroundImage: `url(${federationData?.federation?.sport?.photo}`}}>
           <div className="federation__header-wrapper">
-            <h2 className="federation__header">{federationData?.sport?.name}</h2>
+            <h2 className="federation__header">{federationData?.federation?.sport?.name}</h2>
           </div>
         </div>
         <div className="federation-tab-links__wrapper">

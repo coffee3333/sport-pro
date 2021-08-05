@@ -10,3 +10,8 @@
     color: #ED2840;
     margin-bottom: 34px;
 }
+
+.federation-news__wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+ }

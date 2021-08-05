@@ -12,7 +12,7 @@ export default function FederationsList(){
     useEffect(() => {
 
         axios.get('http://sportproteam2.herokuapp.com/api/sportcategory/')
-          .then(res =>setSports(res.data.results))
+          .then(res =>setSports(res.data))
     }, [])
 
     return (

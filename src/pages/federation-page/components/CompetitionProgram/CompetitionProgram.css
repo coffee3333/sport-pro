@@ -1,3 +1,8 @@
+.federation-competition-program__wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 .federation-competition-program__header{
     font-family: Oswald;
     font-size: 42px;
