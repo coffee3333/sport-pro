@@ -1,12 +1,13 @@
 import React from "react";
-import "./FederationMainNews.css"
+import "./MainNews.css"
+import {Link} from "react-router-dom";
 
-export default function FederationMainNews({data, showMore}){
+export default function MainNews({data}){
 
   return(
     <div className="federation-main-news__wrapper">
       <div className="federation-main-news__img-wrapper">
-        <img src={data.results[0].photo} alt="sport-logo"/>
+        <img src={data.results[0].photo} alt="sport-logo" className="main-news__img"/>
       </div>
       <div className="federation-main-news__news-info-wrapper">
         <div className="federation-main-news__news-date-wrapper">
@@ -18,7 +19,7 @@ export default function FederationMainNews({data, showMore}){
           <p className="federation-main-news__news-desc">{data.results[0].article}</p>
         </div>
         <div className="federation-main-news__news-link-wrapper">
-          <button className="federation-main-news__news-link" onClick={() => showMore(data.results[0])}>Подробнее</button>
+          <Link to  = {`/news/${data.results[0].id}`} className="federation-main-news__news-link">Подробнее</Link>
         </div>
       </div>
     </div>

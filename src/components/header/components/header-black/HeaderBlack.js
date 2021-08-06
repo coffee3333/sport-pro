@@ -24,7 +24,7 @@ export default function HeaderBlack(){
                         <a href = {"#federations"} className ="header-nav-links__link">Федерации</a>
                         <a className="header-nav-links__link" >Рейтинг  КР</a>
                         <a href="#" className="header-nav-links__link">Соревнования</a>
-                        <a href="#" className="header-nav-links__link">Новости</a>
+                        <NavLink className="header-nav-links__link" to="/news">Новости</NavLink>
                         <NavLink className="header-nav-links__link" to="/about-us">О нас</NavLink>
                         <NavLink className="header-nav-links__link" to="/contacts">Контакты</NavLink>
                     </div>

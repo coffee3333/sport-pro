@@ -11,7 +11,9 @@ export default function HeaderWhite() {
     insta: require("../../assets/Insta-white.svg").default
   }
 
-  const isActive = useMemo(() => window.location.pathname.includes( "/federations/"), []);
+  const isActiveFederation = useMemo(() => window.location.pathname.includes( "/federations/"), []);
+  const isActiveNews = useMemo(() => window.location.pathname.includes( "/news/"), []);
+
 
   return (
     <div className="header-white__wrapper">
@@ -28,15 +30,21 @@ export default function HeaderWhite() {
             <NavHashLink
               to="/#federations"
               activeClassName="active"
-              className={`header-white-nav-links__link ${isActive && "header-white-nav-links__link-active"}`}
+              className={`header-white-nav-links__link ${isActiveFederation && "header-white-nav-links__link-active"}`}
             >
               Федерации
             </NavHashLink>
             <a href="#" className="header-white-nav-links__link">Рейтинг КР</a>
             <a href="#" className="header-white-nav-links__link">Соревнования</a>
-            <a href="#" className="header-white-nav-links__link">Новости</a>
-            <NavLink exact className="header-white-nav-links__link" to="/about-us" activeClassName="active">О
-              нас</NavLink>
+            <NavLink
+              exact
+              className={`header-white-nav-links__link ${isActiveNews && "header-white-nav-links__link-active"}`}
+              to="/news"
+              activeClassName="active"
+            >
+              Новости
+            </NavLink>
+            <NavLink exact className="header-white-nav-links__link" to="/about-us" activeClassName="active">О нас</NavLink>
             <NavLink exact className="header-white-nav-links__link" to="/contacts"
                      activeClassName="active">Контакты</NavLink>
           </div>

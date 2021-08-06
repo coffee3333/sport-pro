@@ -1,0 +1,17 @@
+.federation-news__main-header{
+    font-family: Oswald;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-transform: uppercase;
+    color: #ED2840;
+    margin-bottom: 34px;
+}
+
+.federation-news__wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+ }

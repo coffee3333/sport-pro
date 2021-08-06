@@ -1,6 +1,7 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
-export default function FederationNewsItem({news, showMore}){
+export default function NewsItem({news}){
   return(
     <div className="federation-all-news__item-wrapper">
       <div className="federation-all-news__item-img-wrapper">
@@ -15,7 +16,7 @@ export default function FederationNewsItem({news, showMore}){
           <h3 className="federation-all-news__news-header">{news.title}</h3>
         </div>
         <div className="federation-all-news__news-link-wrapper">
-          <button className="federation-all-news__news-link" onClick={() => showMore(news)}>Подробнее</button>
+          <Link to  = {`/news/${news.id}`} className="federation-all-news__news-link">Подробнее</Link>
         </div>
       </div>
     </div>

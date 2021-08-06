@@ -16,14 +16,22 @@ import loadLogo from "../../assets/img/load.gif"
 export default function Federation(props) {
   const [loading, setLoading] = useState(false)
   const [federationData, setFederationData] = useState([]);
+  const [federationNewsData, setFederationNewsData] = useState([]);
 
 
   useEffect( () => {
     setLoading(true)
 
-    axios.get(`http://sportproteam2.herokuapp.com/api/gallery/${props.match.params.id}`)
-      .then(res => setFederationData(res.data))
+    axios.all([
+      axios.get(`http://sportproteam2.herokuapp.com/api/gallery/${props.match.params.id}`),
+      axios.get(`https://sportproteam2.herokuapp.com/api/news/?sport=${props.match.params.id}`)
+    ])
+      .then(axios.spread((resultGallery, resultNews) => {
+        setFederationData(resultGallery.data);
+        setFederationNewsData(resultNews.data);
+      }))
       .finally(() => setLoading(false))
+
   }, [])
 
   const tab_components = {
@@ -31,14 +39,11 @@ export default function Federation(props) {
     federationInKg: <FederationInKg data = {federationData?.federation}/>,
     competitionProgram: <CompetitionProgram/>,
     listOfSportPeople: <ListOfSportPeople/>,
-    news: <FederationNews/>,
+    news: <FederationNews data = {federationNewsData}/>,
     gallery: <FederationGallery data = {federationData?.photo}/>
   }
 
   const [selectedTab, selectTab] = useState(Object.keys(tab_components)[0]);
-
-
-
 
 
   if (loading) return <MainLayout> <div className = "main-loading-wrapper"><img src = {loadLogo} alt = "loading" className = "main-load-gif"/></div></MainLayout>
