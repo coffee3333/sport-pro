@@ -1,10 +1,13 @@
 import React from "react";
 import 'antd/dist/antd.css';
 import { Image } from 'antd';
-import "./FederationGallery.css"
+import "./FederationGallery.css";
 import Slider from "react-slick";
+
 import arrow from "../../../main-page/components/carousels/img/arrow.svg";
 import FederationGalleryItem from "./FederationGalleryItem";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 export default function FederationGallery({data}){
@@ -36,7 +39,7 @@ export default function FederationGallery({data}){
     );
   }
 
-  var settings = {
+  let settings = {
     dots: false,
     infinite: true,
     speed: 800,

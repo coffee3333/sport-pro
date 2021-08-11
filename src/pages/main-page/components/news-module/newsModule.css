@@ -39,6 +39,7 @@
     font-weight: 400;
     line-height: 15px;
     margin-bottom: 15px;
+    color: #FFFFFF;
 }
 
 .news-module-item__content-desc{
@@ -52,6 +53,7 @@
     display: -webkit-box;
     -webkit-line-clamp: 3; /* number of lines to show */
     -webkit-box-orient: vertical;
+    color: #FFFFFF;
 }
 
 .news-module-item__content-link:active,

@@ -1,73 +1,23 @@
 import React, {useEffect, useState} from "react";
 import MainLayout from "../../components/main-layout/MainLayout";
 import "./ContactsPage.css"
+import axios from "axios";
 
-const getContacts = async () => await new Promise((resolve, reject) => {
-  return resolve([
-    {
-      id: 1,
-      title: "Федерации Борьбы КР",
-      number: "+996500123456",
-      address: "ул. Хуева д Кукуева",
-      location: "Бишкек",
-      sport: 1
-    },
-    {
-      id: 2,
-      title: "Федерации Баскетбола КР",
-      number: "+996500123459",
-      address: "ул. Хуева д Кукуева",
-      location: "Бишкек",
-      sport: 2
-    },
-    {
-      id: 3,
-      title: "Федерации Бокса КР",
-      number: "+996500123450",
-      address: "ул. Хуева д Кукуева",
-      location: "Бишкек",
-      sport: 3
-    }
-  ])
-});
+const getFederations = () => new Promise((resolve, reject) => {
 
-const getFederations = async () => await new Promise((resolve, reject) => {
-  return resolve([
-    {
-      id: 1,
-      title: "Олимпийские"
-    },
-    {
-      id: 2,
-      title: "Какие-то еще"
-    }
-  ])
+  axios.get('http://sportproteam2.herokuapp.com/api/sportcategory/')
+    .then(res => resolve(res.data))
 });
 
 const getSports = async () => await new Promise((resolve, reject) => {
-  return resolve([
-    {
-      id: 1,
-      title: "Борьба",
-      sport: 1
-    },
-    {
-      id: 2,
-      title: "Баскетбола",
-      sport: 1
-    },
-    {
-      id: 3,
-      title: "Бокс",
-      sport: 2
-    }
-  ])
+
+    axios.get('https://sportproteam2.herokuapp.com/api/federation/')
+      .then(res => resolve(res.data))
 });
 
 export default function ContactsPage() {
   const [federations, setFederations] = useState([]);
   const [sports, setSports] = useState([]);
-  const [contacts, setContacts] = useState([]);
 
   const [selectedFederation, setSelectedFederation] = useState(0);
   const [selectedSport, setSelectedSport] = useState(0);
@@ -76,26 +26,25 @@ export default function ContactsPage() {
   const [selectedContact, setSelectedContacts] = useState({});
 
   useEffect(() => {
-    Promise.all([getFederations(), getContacts(), getSports()])
+    Promise.all([getFederations(), getSports()])
       .then(res => {
         setFederations(res[0])
-        setContacts(res[1])
-        setSports(res[2])
+        setSports(res[1])
       })
   }, []);
 
   useEffect(() => {
     setFilteredSports(
       sports.filter(
-        item => item.sport === +selectedFederation
+        item => item?.sport?.category.id === +selectedFederation
       )
     )
   }, [selectedFederation]);
 
   useEffect(() => {
     setSelectedContacts(
-      contacts.find(
-        item => item.sport === +selectedSport
+      sports.find(
+        item => item.id === +selectedSport
       )
     )
   }, [selectedSport]);
@@ -120,7 +69,7 @@ export default function ContactsPage() {
                 {
                   federations.map(item =>
                     <option value={item.id} key={item.id}>
-                      {item.title}
+                      {item.name}
                     </option>
                   )
                 }
@@ -133,7 +82,7 @@ export default function ContactsPage() {
                 {
                   filteredSports.map(item =>
                     <option value={item.id} key={item.id}>
-                      {item.title}
+                      {item.name}
                     </option>
                   )
                 }
@@ -141,9 +90,12 @@ export default function ContactsPage() {
             </div>
           </div>
           <div className="contacts-page__contact-info-wrapper">
-            <h3 className="contacts-page__contact-title">{selectedContact?.title}</h3>
+            <h3 className="contacts-page__contact-title">{selectedContact?.name}</h3>
             <p className="contacts-page__contact-address">Контакты: {selectedContact?.address}</p>
-            <p className="contacts-page__contact-address">Номер: {selectedContact?.number}</p>
+            <p className="contacts-page__contact-address">Номер: {selectedContact?.contacts}</p>
+            <div className="contacts-page__img-wrapper">
+              <img src={selectedContact?.logo} alt="logo-federation" className="contacts-page__img"/>
+            </div>
           </div>
         </div>
       </div>

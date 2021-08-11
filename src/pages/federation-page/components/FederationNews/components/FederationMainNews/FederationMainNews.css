@@ -95,3 +95,13 @@
     background: none;
     padding: 0;
 }
+
+.federation-main-news__img{
+    width: 100%;
+    height: 100%;
+}
+
+.federation-main-news__img-wrapper{
+    max-height: 358px;
+    max-width: 608px;
+}

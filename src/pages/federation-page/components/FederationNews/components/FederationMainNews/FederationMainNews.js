@@ -6,7 +6,7 @@ export default function FederationMainNews({data, showMore}){
   return(
     <div className="federation-main-news__wrapper">
       <div className="federation-main-news__img-wrapper">
-        <img src={data.results[0].photo} alt="sport-logo"/>
+        <img src={data.results[0].photo} alt="sport-logo" className="federation-main-news__img"/>
       </div>
       <div className="federation-main-news__news-info-wrapper">
         <div className="federation-main-news__news-date-wrapper">

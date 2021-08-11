@@ -14,21 +14,21 @@ export default function Carousels() {
     const data = [
         {
             id: 1,
-            title: 'Мы едины! Мы за спорт! 1',
+            title: 'Мы едины! Мы за спорт!',
             time: '12.05.2021 - 18.05.2021',
             link: 'link',
             img: require("./img/rect.png").default
         },
         {
             id: 2,
-            title: 'Мы едины! Мы за спорт! 2',
+            title: 'Мы едины! Мы за спорт!',
             time: '12.05.2021 - 18.05.2021',
             link: 'link',
             img: require("./img/rect2.jpeg").default
         },
         {
             id: 3,
-            title: 'Мы едины! Мы за спорт! 3',
+            title: 'Мы едины! Мы за спорт!',
             time: '12.05.2021 - 18.05.2021',
             link: 'link',
             img: require("./img/rect3.jpeg").default
